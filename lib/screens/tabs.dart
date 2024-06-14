@@ -62,7 +62,7 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
     String activePageTitle = 'Categories';
 
     if (_selectedPageIndex == 1) {
-      final List<Meal>  favoriteMeals = ref.watch(favoriteMealsProvider);
+      final List<Meal> favoriteMeals = ref.watch(favoriteMealsProvider);
       activePage = MealsScreen(
         meals: favoriteMeals,
       );
